@@ -1,0 +1,492 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+}
+
+.nav {
+    position: relative;
+    margin: 30px auto auto auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    min-width: 1096px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 2px #c6c6c6;
+}
+
+.nav__logo {
+    width: 78px;
+    height: 28px;
+    margin: 0 10px 0 31px;
+}
+
+.nav__logo img {
+    width: 100%;
+}
+
+.nav__menu ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.nav__menu li {
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__menu a:hover {
+    color: #0141AD
+}
+
+.nav__func {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+    /* border: solid 1px; */
+}
+
+.nav__mode-btn {
+    height: 35px;
+    width: 35px;
+}
+
+.nav__mode-btn img {
+    width: 100%;
+}
+
+.nav__login-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 1000px;
+    margin-left: 20px;
+    font-size: 16x;
+    font-weight: 500;
+    background-color: #0141AD;
+    color: white;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px;
+    background-color: #E9EBEE;
+    z-index: -100;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 140px 0;
+    width: 80%;
+    margin: auto;
+    border: solid 1px;
+}
+
+.container img {
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1130px;
+    display: flex;
+    height: 380px;
+    border: solid 1px;
+}
+
+.s-a {
+    width: 348px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.speed {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.speed__left {
+    width: 130px;
+    height: 130px;
+    border: solid 5px;
+    border-radius: 50%;
+}
+
+.speed__right {
+    margin-top: auto;
+}
+
+.speed__title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: solid 1px;
+}
+
+/* wpm圓環 */
+/* wpm圓環 */
+/* wpm圓環 */
+.speed-progress {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    /* 作為文字定位的參考點 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 設置一個白色背景以模擬圖片中的效果 */
+}
+
+/* 確保圓形進度條容器定位在中間 */
+#circle-wpm {
+    position: absolute;
+}
+
+/* 文字疊加層 */
+.progress-text-overlay {
+    position: relative;
+    text-align: center;
+    color: #333;
+    z-index: 10;
+    /* 確保文字在圓環之上 */
+}
+
+.main-number {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    /* 與上面的數字隔開 */
+}
+
+/* wpm圓環 */
+/* wpm圓環 */
+/* wpm圓環 */
+
+.accu {
+    display: flex;
+}
+
+.accu__left {
+    width: 130px;
+    height: 130px;
+    border: solid 5px;
+    border-radius: 50%;
+}
+
+.accu__right {
+    margin-top: auto;
+}
+
+.accu__title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: solid 1px;
+}
+
+/* accu圓環 */
+/* accu圓環 */
+/* accu圓環 */
+.accu-progress {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    /* 作為文字定位的參考點 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 設置一個白色背景以模擬圖片中的效果 */
+}
+
+/* 確保圓形進度條容器定位在中間 */
+#circle-accu {
+    position: absolute;
+}
+
+/* 文字疊加層 */
+.progress-text-overlay--2 {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    color: #333;
+    z-index: 10;
+    /* 確保文字在圓環之上 */
+}
+
+.main-number--2 {
+    line-height: 1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.label--2 {
+    font-size: 24px;
+    margin-left: 5px;
+    color: #777;
+}
+/* accu圓環 */
+/* accu圓環 */
+/* accu圓環 */
+
+.practice-time {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 348px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.practice-time__title {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.practice-time__label {
+    position: absolute;
+    right: 20px;
+    border: solid 1px;
+}
+
+.practice-time__lesson {
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+}
+
+.practice-time__challenge {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border: solid 1px;
+}
+
+.practice-time__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0141AD;
+}
+
+.practice-time__dot--2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(255, 208, 78);
+}
+
+.practice-time__percent {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: #bbbbbb;
+}
+
+.practice-time__button-area {
+    display: flex;
+    width: 270px;
+    height: 40px;
+    background-color: #bbbbbb;
+    margin-top: 20px;
+}
+
+.practice-time__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.practice-time__button--1 {
+    background-color: #0141AD;
+}
+
+.practice-record {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 348px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.practice-record__title {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.practice-record__calecdar {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px;
+}
+
+.practice-record__grid-cell--gray {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #E0E0E0;
+}
+
+/* 連續登入天數 */
+/* 連續登入天數 */
+/* 連續登入天數 */
+/* 連續登入天數 */
+/* 連續登入天數 */
+.calendar-container {
+    width: 368px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* --- 月份標籤 --- */
+.month-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+    margin: 5px 0 0 30px;
+}
+
+.month-label {
+    width: 82px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* --- 網格佈局 --- */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: 26px repeat(10, 26px);
+    grid-auto-rows: 26px;
+    gap: 3px;
+}
+
+/* 垂直方向的星期標籤 (左側) */
+.day-label-col {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 7;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.day-label {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* --- 方格樣式 --- */
+.calendar-cell {
+    background-color: #e0e0e0;
+    /* 灰色底色 */
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, background-color 0.2s ease-out;
+}
+
+.calendar-cell.filled {
+    background-color: #4a90e2;
+    /* 藍色填入色 */
+}
+
+.calendar-cell.visible {
+    opacity: 1;
+}
+
+/* NEW: 當天日期的方格填入黃色背景 */
+.calendar-cell.today {
+    background-color: #f7d046 !important;
+    /* 強制覆蓋藍色或灰色 */
+    box-shadow: 0 0 5px rgba(247, 208, 70, 0.8);
+}
+
+/* --- 連續天數顯示 --- */
+.counter-display {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    border-top: solid 1px #bbb;
+    color: #333;
+}
+
+.fire-icon {
+    font-size: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.streak-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0141AD;
+    display: inline-block;
+}

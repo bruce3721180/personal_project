@@ -1,58 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="stat__style.css">
+    <link rel="stylesheet" href="stats__style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-circle-progress@1.2.2/dist/circle-progress.min.js"></script>
 
 </head>
-<header>
-    <div class="nav">
-        <div class="nav__logo"><a href="index.html">
-            <img src="./LOGO2.png" alt="">
-        </div></a>
 
-        <nav class="nav__menu">
-            <ul>
-                <li><a href="lesson--basic.html">課程</a></li>
-                <li><a href="challenge.html">挑戰</a></li>
-                <li><a href="stats.html">個人面板</a></li>
-                <li><a href="">關於我們</a></li>
-            </ul>
-        </nav>
+<body>
 
-        <div class="nav__func">
-            <a class="nav__mode-btn">
-                <img src="./icon/sun-yellow.png" alt="">
-            </a>
-            <a href="" class="nav__login-btn">登入</a>
+    <div class="background"></div>
+
+    <header>
+        <div class="nav">
+            <div class="nav__logo"><a href="index.html">
+                    <img src="./LOGO2.png" alt="">
+            </div></a>
+
+            <nav class="nav__menu">
+                <ul>
+                    <li><a href="lesson--basic.html">課程</a></li>
+                    <li><a href="challenge.html">挑戰</a></li>
+                    <li><a href="stats.html">個人面板</a></li>
+                    <li><a href="">關於我們</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav__func">
+                <a class="nav__mode-btn">
+                    <img src="./icon/sun-yellow.png" alt="">
+                </a>
+                <a href="" class="nav__login-btn">登入</a>
+            </div>
+
         </div>
+    </header>
 
-    </div>
+    <main>
+        <div class="container">
+            <div class="section-1">
 
-    <!-- <div class="lesson-list">
-        <ul>
-            <li>基礎課程</li>
-            <li>進階課程</li>
-        </ul>
-    </div> -->
-</header>
+                <div class="s-a">
+                    <div class="speed">
+                        <div class="speed-progress">
+                            <div id="circle-wpm"></div>
+                            <div class="progress-text-overlay">
+                                <span class="main-number"></span>
+                                <span class="label">WPM</span>
+                            </div>
+                        </div>
 
-<body>  
-<main>
-<div class="background">
+                        <div class="speed__right">
+                            <div class="speed__title">速度</div>
+                            <div class="speed__average">成員平均：65 WPM</div>
+                        </div>
+                    </div>
 
-    <div class="container">
-        <img src="IMG_0044.JPG" alt="">
-        <img src="IMG_0046.JPG" alt="">
-        <img src="IMG_0048.JPG" alt="">
-    </div>
-</div>
-</main>    
+                    <div class="accu">
+                        <div class="accu-progress">
+                            <div id="circle-accu"></div>
+
+                            <div class="progress-text-overlay--2">
+                                <span class="main-number--2"></span>
+                                <span class="label--2">%</span>
+                            </div>
+                        </div>
+
+                        <div class="accu__right">
+                            <div class="accu__title">準確率</div>
+                            <div class="accu__average">成員平均：84%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-time">
+                    <div class="practice-time__title">練習時間</div>
+                    <div class="practice-time__label">
+                        <div class="practice-time__lesson">
+                            <div class="practice-time__dot"></div>
+                            <span>課程</span>
+                        </div>
+                        <div class="practice-time__challenge">
+                            <div class="practice-time__dot--2"></div>
+                            <span>挑戰</span>
+                        </div>
+                    </div>
+                    <div class="practice-time__percent"></div>
+                    <div class="practice-time__button-area">
+                        <div class="practice-time__button practice-time__button--1">今天</div>
+                        <div class="practice-time__button">本周</div>
+                        <div class="practice-time__button">本月</div>
+                    </div>
+                </div>
+
+                <div class="calendar-container">
+                    <div class="calendar__title">
+                        每日練習紀錄
+                    </div>
+
+                    <div class="calendar-grid" id="calendarGrid">
+                        <div class="day-label-col">
+                            <span class="day-label">一</span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label">日</span>
+                        </div>
+                    </div>
+
+                    <div class="month-labels">
+                        <span class="month-label" id="monthLabelLeft"></span>
+                        <span class="month-label" id="monthLabelMiddle"></span>
+                        <span class="month-label" id="monthLabelRight"></span>
+                    </div>
+
+
+                    <div class="counter-display">
+                        <p>
+                            <span class="fire-icon">🔥</span>
+                            連續練習天數
+                            <span id="streakCount" class="streak-number">0</span>
+                            天
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="stats__script.js"></script>
 </body>
+
 </html>
