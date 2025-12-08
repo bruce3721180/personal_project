@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基礎課程</title>
+
+    <link rel="stylesheet" href="typing-page__style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+</head>
+
+<body>
+    <div class="typing-screen">
+        <div class="nav">
+            <div class="list-btn">
+                <a href="lesson--basic.html">
+                    <img src="./icon/arrow-white--left.png" alt="">
+                </a>
+            </div>
+            <div class="lesson-name">
+                複習：ㄑ、ㄨ 鍵
+            </div>
+            <div class="func-right">
+                <div class="icon" id="btn--restart">
+                    <img src="./icon/restart-2.png" alt="">
+                </div>
+                <div class="icon" id="btn--keyboard">
+                    <img src="./icon/keyboard.png" alt="">
+                </div>
+                <div class="icon" id="btn--hand">
+                    <img src="./icon/hand.png" alt="">
+                </div>
+                <div class="icon" id="btn--stat">
+                    <img src="./icon/setting-2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="typing-area">
+                <div class="display">
+                    <div class="display__word">
+                        <!-- ⭐ 給 p 一個 id，方便 JS 抓 -->
+                        <p id="displayText">
+                        </p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <!-- ⭐ 由 JS 控制寬度 -->
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="start-hint__container">
+                        <div class="start-hint__box">
+                            <div class="start-hint__dot"></div>
+                        </div>
+                        <div class="start-hint">
+                            <p>開始<br>打字</p>
+                        </div>
+                        <div class="start-hint__box2">
+                            <div class="start-hint__dot2"></div>
+                        </div>
+                    </div>
+
+                    <!-- ⭐ 5 秒沒打字的提示框 -->
+                    <div id="resumeHint" class="resume-hint">
+                        <span class="resume-icon">
+                            <img src="./icon/pause.png" alt="">
+                        </span>
+                        繼續輸入
+                    </div>
+                </div>
+
+                <div class="hint">
+                    <div class="keyboard-hand">
+                        <div class="keyboard">
+                            <div class="row-1">
+                                <div class="key">`</div>
+                                <div class="key">ㄅ</div>
+                                <div class="key">ㄉ</div>
+                                <div class="key">ˇ</div>
+                                <div class="key">ˋ</div>
+                                <div class="key">ㄓ</div>
+                                <div class="key">ˊ</div>
+                                <div class="key">˙</div>
+                                <div class="key">ㄚ</div>
+                                <div class="key">ㄞ</div>
+                                <div class="key">ㄢ</div>
+                                <div class="key">ㄦ</div>
+                                <div class="key">=</div>
+                                <div class="key key-en">backspace</div>
+                            </div>
+                            <div class="row-2">
+                                <div class="key key-en">tab</div>
+                                <div class="key">ㄆ</div>
+                                <div class="key">ㄊ</div>
+                                <div class="key">ㄍ</div>
+                                <div class="key">ㄐ</div>
+                                <div class="key">ㄔ</div>
+                                <div class="key">ㄗ</div>
+                                <div class="key">ㄧ</div>
+                                <div class="key">ㄛ</div>
+                                <div class="key">ㄟ</div>
+                                <div class="key">ㄣ</div>
+                                <div class="key">[</div>
+                                <div class="key">]</div>
+                                <div class="key">\</div>
+                            </div>
+                            <div class="row-3">
+                                <div class="key key-en">caps lock</div>
+                                <div class="key">ㄇ</div>
+                                <div class="key">ㄋ</div>
+                                <div class="key">ㄎ</div>
+                                <div class="key">ㄑ</div>
+                                <div class="key">ㄕ</div>
+                                <div class="key">ㄘ</div>
+                                <div class="key">ㄨ</div>
+                                <div class="key">ㄜ</div>
+                                <div class="key">ㄠ</div>
+                                <div class="key">ㄤ</div>
+                                <div class="key">'</div>
+                                <div class="key key-en">enter</div>
+                            </div>
+                            <div class="row-4">
+                                <div class="key key-en">shift</div>
+                                <div class="key">ㄈ</div>
+                                <div class="key">ㄌ</div>
+                                <div class="key">ㄏ</div>
+                                <div class="key">ㄒ</div>
+                                <div class="key">ㄖ</div>
+                                <div class="key">ㄙ</div>
+                                <div class="key">ㄩ</div>
+                                <div class="key">ㄝ</div>
+                                <div class="key">ㄡ</div>
+                                <div class="key">ㄥ</div>
+                                <div class="key key-en">shift</div>
+                            </div>
+                            <div class="row-5">
+                                <div class="key key-en">ctrl</div>
+                                <div class="key key-en">start</div>
+                                <div class="key key-en">alt</div>
+                                <div class="key key-en">space</div>
+                                <div class="key key-en">alt</div>
+                                <div class="key key-en">fn</div>
+                                <div class="key key-en">ctrl</div>
+                            </div>
+                        </div>
+
+                        <div class="hand">
+                            <img src="./finger_pic/finger_pic_0042_g.png">
+                            <img src="./finger_pic/finger_pic_0041_h.png">
+                            <img src="./finger_pic/finger_pic_0000_k.png">
+                            <img src="./finger_pic/finger_pic_0000_k.png">
+                            <img src="./finger_pic/finger_pic_0001_f.png">
+                            <img src="./finger_pic/finger_pic_0002_j.png">
+                            <img src="./finger_pic/finger_pic_0003_d.png">
+                            <img src="./finger_pic/finger_pic_0004_l.png">
+                            <img src="./finger_pic/finger_pic_0005_s.png">
+                            <img src="./finger_pic/finger_pic_0006_;.png">
+                            <img src="./finger_pic/finger_pic_0007_a.png">
+                            <img src="./finger_pic/finger_pic_0008_-.png">
+                            <img src="./finger_pic/finger_pic_0009_0.png">
+                            <img src="./finger_pic/finger_pic_0010_9.png">
+                            <img src="./finger_pic/finger_pic_0011_8.png">
+                            <img src="./finger_pic/finger_pic_0012_7.png">
+                            <img src="./finger_pic/finger_pic_0013_6.png">
+                            <img src="./finger_pic/finger_pic_0014_5.png">
+                            <img src="./finger_pic/finger_pic_0015_4.png">
+                            <img src="./finger_pic/finger_pic_0016_3.png">
+                            <img src="./finger_pic/finger_pic_0017_2.png">
+                            <img src="./finger_pic/finger_pic_0018_1.png">
+                            <img src="./finger_pic/finger_pic_0019_p.png">
+                            <img src="./finger_pic/finger_pic_0020_o.png">
+                            <img src="./finger_pic/finger_pic_0021_i.png">
+                            <img src="./finger_pic/finger_pic_0022_u.png">
+                            <img src="./finger_pic/finger_pic_0023_y.png">
+                            <img src="./finger_pic/finger_pic_0024_t.png">
+                            <img src="./finger_pic/finger_pic_0025_r.png">
+                            <img src="./finger_pic/finger_pic_0026_e.png">
+                            <img src="./finger_pic/finger_pic_0027_w.png">
+                            <img src="./finger_pic/finger_pic_0028_q.png">
+                            <img src="./finger_pic/finger_pic_0029_slash.png">
+                            <img src="./finger_pic/finger_pic_0030_。.png">
+                            <img src="./finger_pic/finger_pic_0031_，.png">
+                            <img src="./finger_pic/finger_pic_0032_m.png">
+                            <img src="./finger_pic/finger_pic_0033_n.png">
+                            <img src="./finger_pic/finger_pic_0034_b.png">
+                            <img src="./finger_pic/finger_pic_0035_v.png">
+                            <img src="./finger_pic/finger_pic_0036_c.png">
+                            <img src="./finger_pic/finger_pic_0037_x.png">
+                            <img src="./finger_pic/finger_pic_0038_z.png">
+                            <img src="./finger_pic/finger_pic_0039_space.png">
+                            <img src="./finger_pic/finger_pic_0040_0.png">
+                        </div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="speed">
+                            <div>
+                                <p>速度</p>
+                            </div>
+                            <div>
+                                <span id="stat_speed">0</span>
+                                <span>WPM</span>
+                            </div>
+                        </div>
+                        <div class="accu">
+                            <div>
+                                <p>準確率</p>
+                            </div>
+                            <div>
+                                <span id="stat_accu">0</span>
+                                <span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ⭐ 結果視窗 -->
+    <div id="resultModal" class="modal hidden">
+        <div class="modal-content">
+
+            <!-- ⭐ 右上角關閉按鈕 -->
+            <button class="modal-close" id="btnCloseModal">✖</button>
+
+            <h2>本關結果</h2>
+            <p>星星數：
+                <span id="result_stars"></span>
+            </p>
+            <p>打字速度：<span id="result_charSpeed"></span> 字/分鐘</p>
+            <p>WPM：<span id="result_wpm"></span></p>
+            <p>使用時間：<span id="result_time"></span> 秒</p>
+            <p>準確率：<span id="result_resultAccu"></span>%</p>
+            <p>總分：<span id="result_score"></span> / 2000</p>
+
+            <div class="modal-buttons">
+                <button id="btnRetry">再試一次</button>
+                <button id="btnNext">下一關</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ⭐ JS：可以改成外部檔案 typing.js  -->
+    <script src="typing-page.js"></script>
+</body>
+
+</html>

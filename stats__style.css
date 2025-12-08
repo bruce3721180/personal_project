@@ -1,0 +1,818 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+}
+
+.nav {
+    position: relative;
+    margin: 30px auto auto auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    min-width: 1096px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 2px #c6c6c6;
+}
+
+.nav__logo {
+    width: 78px;
+    height: 28px;
+    margin: 0 10px 0 31px;
+}
+
+.nav__logo img {
+    width: 100%;
+}
+
+.nav__menu ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.nav__menu li {
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__menu a:hover {
+    color: #0141AD
+}
+
+.nav__func {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+    /* border: solid 1px; */
+}
+
+.nav__mode-btn {
+    height: 35px;
+    width: 35px;
+}
+
+.nav__mode-btn img {
+    width: 100%;
+}
+
+.nav__login-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 1000px;
+    margin-left: 20px;
+    font-size: 16x;
+    font-weight: 500;
+    background-color: #0141AD;
+    color: white;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px;
+    background-color: #E9EBEE;
+    z-index: -100;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 140px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.container img {
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    width: 1096px;
+    gap: 30px;
+    display: flex;
+    height: 380px;
+}
+
+.s-a {
+    width: 348px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.speed {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.speed__left {
+    width: 130px;
+    height: 130px;
+    border: solid 5px;
+    border-radius: 50%;
+}
+
+.speed__right {
+    width: 140px;
+    text-align: right;
+    margin-top: auto;
+}
+
+.speed__title {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: solid 1px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+/* wpm圓環 */
+/* wpm圓環 */
+/* wpm圓環 */
+.speed-progress {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    /* 作為文字定位的參考點 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 設置一個白色背景以模擬圖片中的效果 */
+}
+
+/* 確保圓形進度條容器定位在中間 */
+#circle-wpm {
+    position: absolute;
+}
+
+/* 文字疊加層 */
+.progress-text-overlay {
+    position: relative;
+    text-align: center;
+    color: #333;
+    z-index: 10;
+    /* 確保文字在圓環之上 */
+}
+
+.main-number {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    /* 與上面的數字隔開 */
+}
+
+/* wpm圓環 */
+/* wpm圓環 */
+/* wpm圓環 */
+
+
+/* accu圓環 */
+/* accu圓環 */
+/* accu圓環 */
+.accu {
+    display: flex;
+    padding-top: 10px;
+}
+
+.accu__left {
+    width: 130px;
+    height: 130px;
+    border: solid 5px;
+    border-radius: 50%;
+}
+
+.accu__right {
+    text-align: right;
+    width: 140px;
+    margin-top: auto;
+}
+
+.accu__title {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: solid 1px;
+}
+
+/* accu圓環 */
+/* accu圓環 */
+/* accu圓環 */
+.accu-progress {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    /* 作為文字定位的參考點 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 確保圓形進度條容器定位在中間 */
+#circle-accu {
+    position: absolute;
+}
+
+/* 文字疊加層 */
+.progress-text-overlay--2 {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    color: #333;
+    z-index: 10;
+    /* 確保文字在圓環之上 */
+}
+
+.main-number--2 {
+    line-height: 1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.label--2 {
+    font-size: 24px;
+    margin-left: 5px;
+    color: #777;
+}
+
+
+/* 練習時間 */
+/* 練習時間 */
+/* 練習時間 */
+.practice-time {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 348px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.practice-time__title {
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.practice-time__label {
+    position: absolute;
+    right: 20px;
+}
+
+.practice-time__lesson {
+    display: flex;
+    align-items: center;
+}
+
+.practice-time__challenge {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.practice-time__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #0141AD;
+}
+
+.practice-time__dot--2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: rgb(255, 208, 78);
+}
+
+.practice-time__pie {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+}
+
+.time-display__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+}
+
+#time-display {
+    font-size: 36px;
+    font-weight: 500;
+    color: #333;
+}
+
+#pie_circle {
+    width: 165px;
+    height: 165px;
+}
+
+.btn-area {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: 30px;
+    background-color: #E9EBEE;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.btn1 {
+    color: white;
+}
+
+.btn-blue {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #0141AD;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* 連續登入天數 */
+/* 連續登入天數 */
+/* 連續登入天數 */
+/* 連續登入天數 */
+/* 連續登入天數 */
+.calendar-container {
+    width: 368px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* --- 月份標籤 --- */
+.month-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+    margin: 5px 0 0 30px;
+}
+
+.month-label {
+    width: 82px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* --- 網格佈局 --- */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: 26px repeat(10, 26px);
+    grid-auto-rows: 26px;
+    gap: 3px;
+}
+
+/* 垂直方向的星期標籤 (左側) */
+.day-label-col {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 7;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.day-label {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* --- 方格樣式 --- */
+.calendar-cell {
+    background-color: #e0e0e0;
+    /* 灰色底色 */
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, background-color 0.2s ease-out;
+}
+
+.calendar-cell.filled {
+    background-color: #4a90e2;
+    /* 藍色填入色 */
+}
+
+.calendar-cell.visible {
+    opacity: 1;
+}
+
+/* NEW: 當天日期的方格填入黃色背景 */
+.calendar-cell.today {
+    background-color: #f7d046 !important;
+    /* 強制覆蓋藍色或灰色 */
+    box-shadow: 0 0 5px rgba(247, 208, 70, 0.8);
+}
+
+/* --- 連續天數顯示 --- */
+.counter-display {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    border-top: solid 1px #bbb;
+    color: #333;
+}
+
+.fire-icon {
+    font-size: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.streak-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0141AD;
+    display: inline-block;
+}
+
+
+.section-2 {
+    width: 1096px;
+    height: 640px;
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.section-2__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-2__title{
+    color: #0141AD;
+    font-size: 28px;
+    font-weight: 700;
+}
+.section-2__btn-area {
+    display: flex;
+    position: relative;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #E9EBEE;
+}
+
+.section-2__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    z-index: 1;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.section-2__btn.-on {
+color: white;
+}
+.section-2__btn-blue {
+    position: absolute;
+    left: 0px;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    transition: ease-in-out 0.5s;
+    background-color: #0141AD;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+
+.section-2__main {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.section-2__info {
+    width: 240px;
+    font-size: 16px;
+}
+
+/* 鍵盤區域 */
+.keyboard-speed {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 3px;
+    border-radius: 20px;
+    background-color: #E9EBEE;
+}
+.keyboard-accu {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    gap: 3px;
+    border-radius: 20px;
+    background-color: #E9EBEE;
+}
+
+.row-1 {
+    display: grid;
+    width: 706px;
+    height: 46px;
+    grid-template-columns: repeat(13, 46px) auto;
+    gap: 3px;
+}
+
+.row-2 {
+    display: grid;
+    height: 46px;
+    grid-template-columns: auto repeat(13, 46px);
+    gap: 3px;
+}
+
+.row-3 {
+    display: grid;
+    height: 46px;
+    grid-template-columns: auto repeat(11, 46px) auto;
+    gap: 3px;
+}
+
+.row-4 {
+    display: grid;
+    height: 46px;
+    grid-template-columns: auto repeat(10, 46px) auto;
+    gap: 3px;
+}
+
+.row-5 {
+    display: grid;
+    height: 46px;
+    grid-template-columns: repeat(3, auto) 311px repeat(3, auto);
+    gap: 3px;
+}
+
+.key {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border: solid 1px;
+    border-radius: 5px;
+}
+.key2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border: solid 1px;
+    border-radius: 5px;
+}
+.key:hover{
+    outline: solid 2px #0141AD;
+}
+.key2:hover{
+    outline: solid 2px #0141AD;
+}
+
+.key-en {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 12px;
+}
+.key-en2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 12px;
+}
+
+.section-2__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: solid 1px;
+}
+
+.section-2__card {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: #E9EBEE;
+}
+
+.section-2__icon {
+    display: block;
+    width: 42px;
+    height: 42px;
+}
+
+.section-2__card-info {
+    width: 220px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.section-3{
+    width: 1096px;
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.section-3__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-3__title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #0141AD;
+}
+.section-3__speed-color{
+    display: flex;
+}
+.section-3__gradient img{
+    width: 130px;
+    height: 10px;
+}
+
+.section-3__main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hand-data{
+    display: flex;
+    margin-top: 20px;
+}
+
+.hand-data__left{
+    width: 130px;
+    border-right: solid 1px rgb(191, 191, 191);
+}
+
+.hand-data__right{
+    margin-left: 30px;
+}
+.hand-data__tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    color: white;
+    background-color: #0141AD;
+}
+.hand-data__info span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.finger-data{
+    display: flex;
+}
+.finger-data__left{
+    padding-right: 10px;
+    border-right: solid 1px rgb(192, 192, 192);
+}
+.finger-data__right{
+    padding-left: 10px;
+}
+.finger-data__pics{
+    display: flex;
+    gap: 20px;
+    width: 340px;
+    height: 90px;
+}
+.finger-data__pic{
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+}
+.finger-data__pic img{
+    width: 100%;
+    transform: scale(1.4);
+}
+.finger-data__infos{
+    display: flex;
+    gap: 20px;
+}
+.finger-data__info{
+    display: flex;
+    width: 70px;
+}
+
+.section-3__card-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.section-3__card {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: #E9EBEE;
+}
+
+

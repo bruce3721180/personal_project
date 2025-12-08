@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打注｜關於我們</title>
+
+    <link rel="stylesheet" href="index__styles.css">
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+    <!-- 背景：直接沿用首頁結構，只是高度會在 about__styles.css 裡縮短 -->
+    <div class="background__container">
+
+        <div class="background__gray"></div>
+
+        <div class="background__dark-blue"></div>
+
+        <div class="dot-container">
+            <div class="dot--1"></div>
+            <div class="dot--2"></div>
+            <div class="dot--3"></div>
+        </div>
+
+        <div class="bg-marquee">
+            <div class="marquee-content" id="marquee">
+                <span id="text">ㄍㄨㄢ ㄩˊㄨㄛˇㄇㄣ˙ㄍㄨㄢ ㄩˊㄨㄛˇㄇㄣ˙ㄍㄨㄢ ㄩˊㄨㄛˇㄇㄣ˙</span>
+                <span id="text-copy"></span>
+            </div>
+        </div>
+
+        <div class="keys-container">
+            <div class="float-key float-key-1">
+                <img src="./background-items/float-key--1.png" alt="">
+            </div>
+            <div class="float-key float-key-3">
+                <img src="./background-items/float-key--3.png" alt="">
+            </div>
+            <div class="float-key float-key-4">
+                <img src="./background-items/float-key--3.png" alt="">
+            </div>
+            <div class="float-key float-key-5">
+                <img src="./background-items/float-key--1.png" alt="">
+            </div>
+            <div class="float-key float-key-6">
+                <img src="./background-items/float-key--2.png" alt="">
+            </div>
+            <div class="float-key float-key-7">
+                <img src="./background-items/float-key--3.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Header：完全沿用 -->
+    <header>
+        <div class="nav">
+            <div class="nav__logo"><a href="index.html">
+                    <img src="./LOGO2.png" alt="">
+            </div></a>
+
+            <nav class="nav__menu">
+                <ul>
+                    <li><a href="lesson--basic.html">課程</a></li>
+                    <li><a href="challenge.html">挑戰</a></li>
+                    <li><a href="stats.html">個人面板</a></li>
+                    <li><a href="aboutme.html" class="nav__link--active">關於我們</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav__func">
+                <a class="nav__mode-btn">
+                    <img src="./icon/sun-yellow.png" alt="">
+                </a>
+                <a href="" class="nav__login-btn">登入</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main：新的關於我們內容 -->
+    <main>
+        <div class="main__container about-main">
+
+            <!-- HERO 區塊 -->
+            <section class="about-hero">
+                <div class="about-hero__left">
+                    <h1 class="about-hero__title">
+                        <span class="about-hero__line-1">About us</span>
+                        <span class="about-hero__line-2">關於<span class="span-color">我們</span></span>
+                    </h1>
+                    <p class="section__info about-hero__info">
+                        專為<span class="span-color">注音使用者</span>打造的打字學習平台
+                    </p>
+                    <p class="about-hero__desc">
+                        我們希望透過視覺化鍵盤、即時回饋與關卡式設計<br>把「打字」從枯燥的練習，變成能看見進步、感受成就的過程
+                    </p>
+
+                </div>
+
+                <div class="about-hero__right">
+                    <div class="about-hero__card">
+                        <div class="about-hero__card-header">
+                            <div>
+                                <h3 class="about-hero__card-title">製作契機</h3>
+                            </div>
+                        </div>
+                        <div class="about-hero__card-body">
+                            <div class="border-bottom">
+                                <p>
+                                    我們觀察到市面上許多中文打字網站<br>缺乏循序漸進的課程，介面也較為老舊<br>和英文打字網站的落差相當大<br>於是我們萌生了製作注音打字網站的想法：
+                                </p>
+                            </div>
+                            <ul>
+                                <li>以<span class="span-color">注音鍵盤</span>為核心設計</li>
+                                <li>畫面簡潔、富趣味性</li>
+                                <li>清楚呈現<span class="span-color">速度、正確率與時間</span>等數據</li>
+                            </ul>
+
+                        </div>
+                        <div class="about-hero__metrics">
+                            <div class="about-metric">
+                                <span class="about-metric__label">平均進步</span>
+                                <span class="about-metric__value">+34 <span class="span-small">WPM</span></span>
+                            </div>
+                            <div class="about-metric">
+                                <span class="about-metric__label">完成課程</span>
+                                <span class="about-metric__value">5M+</span>
+                            </div>
+                            <div class="about-metric">
+                                <span class="about-metric__label">學習評價</span>
+                                <span class="about-metric__value">4.8 / 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 使命 / 理念 -->
+            <section class="about-section">
+                <div class="about-section__header">
+                    <h2 class="about-section__title">
+                        <span class="span-color">我們的目標</span>
+                    </h2>
+                    <p class="about-section__subtitle">
+                        不只是讓你打得更快，而是幫你建立「長期維持」的輸入實力
+                    </p>
+                </div>
+
+                <div class="about-section__grid">
+                    <div class="about-card">
+                        <p class="about-card__tag">學習體驗</p>
+                        <h3 class="about-card__title">把枯燥練習變的有成就感</h3>
+                        <p class="about-card__text">
+                            我們不鼓勵盲目的重複輸入，而是透過關卡與挑戰，把練習拆成許多小目標。
+                            每完成一個段落，你都能看到自己的進步，慢慢累積對打字的信心。
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <p class="about-card__tag">產品設計</p>
+                        <h3 class="about-card__title">專為注音打造的視覺化鍵盤</h3>
+                        <p class="about-card__text">
+                            不再只是看一張平面的鍵盤圖。
+                            我們讓每一個鍵都能即時對應到畫面中的注音，
+                            在輸入時用顏色與位置提示你，幫助更快建立肌肉記憶。
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <p class="about-card__tag">學習數據</p>
+                        <h3 class="about-card__title">看得見的進步才有動力</h3>
+                        <p class="about-card__text">
+                            打注會記錄你的速度、正確率與練習時間，
+                            讓你清楚知道自己在哪些關卡表現最好、哪裡還可以再加強。
+                            未來也會加入更多圖表與個人分析。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 未來規劃 + CTA -->
+            <section class="about-section about-section--cta">
+                <div class="about-section__header about-section__header--center">
+                    <h2 class="about-section__title">
+                        我們想陪你走得更遠
+                    </h2>
+                    <p class="about-section__subtitle">
+                        我們會持續優化課程與介面體驗，成為你最信任的打字練習夥伴
+                    </p>
+                </div>
+
+                <div class="about-cta__cards">
+                    <div class="about-cta__card">
+                        <h3 class="about-cta__title">更多情境式練習</h3>
+                        <p class="about-cta__text">
+                            未來將加入報告撰寫、聊天訊息、工作回覆等情境題材，
+                            讓練習內容更貼近真實使用場景。
+                        </p>
+                    </div>
+                    <div class="about-cta__card">
+                        <h3 class="about-cta__title">個人面板與成就系統</h3>
+                        <p class="about-cta__text">
+                            透過等級、徽章與長期紀錄，幫你保留每一段努力痕跡，
+                            也讓學習過程更有動力。
+                        </p>
+                    </div>
+                    <div class="about-cta__card">
+                        <h3 class="about-cta__title">更多裝置與鍵盤支援</h3>
+                        <p class="about-cta__text">
+                            除了桌機與筆電，我們也在規劃更適合平板與外接鍵盤的練習體驗。
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer：完全沿用 -->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <img src="./LOGO2.png" alt="">
+                    </div>
+                    <p class="footer__imfo">
+                        系統化的注音打字練習平台。<br>
+                        透過我們全面的訓練系統，<br>
+                        提升您的打字速度、準確性和效率。
+                    </p>
+                    <div class="footer__social">
+                        <span class="footer__social-icon">
+                            <img src="./icon/facebook.png" alt="">
+                        </span>
+                        <span class="footer__social-icon">
+                            <img src="./icon/twitter.png" alt="">
+                        </span>
+                        <span class="footer__social-icon">
+                            <img src="./icon/email.png" alt="">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__menu">
+                        <p class="footer__func"><span class="span-color">課程</span></p>
+                        <ul class="footer__ul">
+                            <li class="footer__link">新手課程</li>
+                            <li class="footer__link">進階課程</li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__func"><span class="span-color">挑戰</span></p>
+                        <ul class="footer__ul">
+                            <li class="footer__link">速度測驗</li>
+                            <li class="footer__link">遊戲</li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__func"><span class="span-color">個人面板</span></p>
+                    </div>
+                    <div class="footer__menu">
+                        <p class="footer__func"><span class="span-color">關於我們</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copy-right">
+                <p>© 2025 DaZhu. All rights reserved.</p>
+            </div>
+
+        </div>
+
+        <div class="footer__keys">
+            <img src="./background-items/footer__keys.png" alt="">
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

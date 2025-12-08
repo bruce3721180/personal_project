@@ -1,0 +1,81 @@
+.s-a{
+    width: 350px;
+    height: 370px;
+    background-color: white;
+}
+.s-a__speed-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: solid 1px;
+
+}
+.s-a__speed-percent{
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background: conic-gradient(#0141AD,#DD53FF,#0141AD)
+}
+.s-a__speed-value{
+    position: absolute;
+    font-size: x-small;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    font-size: 36px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.btn a{
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 30px;
+    background-color: #ffffff;
+    border: #0141AD solid 2px;
+    width: 140px;
+    height: 60px;
+    border-radius: 100px;
+    font-size: 20px;    
+}
+.btn__circle--bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0141AD;
+}
+.btn__circle--sm{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.btn2{
+    overflow: hidden;
+    background-color: #0141AD;
+    transform-origin: right;
+    transition: all 0.3s ease-in-out;
+}
+.btn2__circle--bg{
+    background-color: #ffffff;
+}
+.btn2__circle--sm{
+    background-color: #0141AD;
+}
+
+.btn2:hover{
+    transform: scalex(0);
+}

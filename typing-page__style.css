@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+}
+
+.typing-screen {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #0141AD;
+    z-index: 1;
+}
+
+.list-btn {
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.list-btn:hover {
+    transform: scale(1.1);
+}
+
+.list-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.lesson-name {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.list-btn img {
+    width: 100%;
+}
+
+.func-right {
+    display: flex;
+    margin: 0 40px 0 auto;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(206, 206, 206); */
+}
+
+.typing-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    /* border: solid 2px red; */
+}
+
+.display {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 1096px;
+    /* border: solid 1px; */
+}
+
+.display__word {
+    width: 80%;
+    font-size: 32px;
+    line-height: 2;
+    margin-top: 20px;
+    max-height: calc(100vh - 420px);
+    overflow: hidden;
+
+}
+
+.progress-bar {
+    width: 80%;
+    height: 5px;
+    background-color: #0141AD;
+}
+
+.start-hint__container {
+    position: absolute;
+    top: -20px;
+    /* 修正：原本是 --20px */
+    left: -30px;
+    display: flex;
+    transition: top 0.5s ease;
+}
+
+.start-hint {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: 500;
+    width: 80px;
+    height: 120px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    background-color: #0141AD;
+    transition: top 0.5s ease;
+}
+
+.start-hint__box {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #0141AD;
+}
+
+.start-hint__dot {
+    position: absolute;
+    left: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.start-hint__box2 {
+    position: absolute;
+    left: 90px;
+    height: 10px;
+    width: 10px;
+    background-color: #0141AD;
+}
+
+.start-hint__dot2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.hint {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 1096px;
+    height: 350px;
+    margin-top: 20px;
+    /* border: solid 1px; */
+}
+
+.keyboard-hand {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px; */
+    overflow: hidden;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 2px;
+    /* border-radius: 20px;
+    border: solid 1px; */
+}
+
+.row-1 {
+    display: grid;
+    width: 660px;
+    height: 42px;
+    grid-template-columns: repeat(13, 42px) auto;
+    gap: 2px;
+}
+
+.row-2 {
+    display: grid;
+    width: 660px;
+    height: 42px;
+    grid-template-columns: 65px repeat(12, 42px) auto;
+    gap: 2px;
+}
+
+.row-3 {
+    width: 660px;
+    display: grid;
+    height: 42px;
+    grid-template-columns: 85px repeat(11, 42px) auto;
+    gap: 2px;
+}
+
+.row-4 {
+    width: 660px;
+    display: grid;
+    height: 42px;
+    grid-template-columns: auto repeat(10, 42px) auto;
+    gap: 2px;
+}
+
+.row-5 {
+    width: 660px;
+    display: grid;
+    height: 42px;
+    grid-template-columns: repeat(3, auto) 311px repeat(3, auto);
+    gap: 2px;
+}
+
+.hover {
+    background-color: #4a90e2;
+}
+
+.key-en {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    font-size: 12px !important;
+}
+
+.hand {
+    position: absolute;
+    left: -75px;
+    width: 100%;
+    height: 300px;
+}
+
+.hand img {
+    width: 117%;
+}
+
+.stat {
+    height: 200px;
+    width: 100px;
+    /* border: solid 1px; */
+}
+
+.stat-wide {
+    display: flex;
+    width: 80%;
+    /* keyboard-hand 關閉時變寬一點 */
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* .stat-wide .speed,
+.stat-wide .accu {
+    padding: 10px;
+} */
+
+.stat p {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.speed {
+    padding: 10px;
+}
+
+#stat_speed {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.accu {
+    padding: 10px;
+}
+
+#stat_accu {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+
+/* ==== 顯示注音用的 span 狀態 ==== */
+/* 顯示注音與空白的格子 */
+/* 顯示注音與空白的格子 */
+.bpm-char {
+    position: relative;
+    display: inline-flex;
+    /* 讓內容在固定高的盒子裡置中 */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    width: 1.2em;
+    /* 一格的寬度（可微調） */
+    height: 1.5em;
+    /* 一格的高度（★關鍵：所有格子一樣高） */
+
+    margin-right: 2px;
+    /* 格子之間 2px 間距 */
+    border-radius: 5px;
+    /* 如果你有圓角，這裡順便設定 */
+    border-bottom: 3px solid transparent;
+
+    vertical-align: middle;
+
+    transition: background-color 0.3s;
+}
+
+.bpm-char.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* 讓底線貼在方塊外面，不受圓角影響 */
+    width: 100%;
+    height: 4px;
+    /* 底線粗細 */
+    background-color: #0141AD;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.bpm-char.correct {
+    background-color: #9fe6a0;
+    /* 正確（沒錯過）綠色 */
+}
+
+.bpm-char.correct-after-error {
+    background-color: #ffcc80;
+    /* 曾錯過→改成橘色 */
+}
+
+.bpm-char.incorrect {
+    background-color: #ff9e9e;
+    /* 錯誤紅色（0.5 秒後移除 class） */
+}
+
+/* 鍵盤鍵的顏色與動畫 */
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border: solid 1px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.key--active {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.key--error {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+/* ==== 進度條 ==== */
+.progress-bar {
+    position: relative;
+    width: 80%;
+    height: 5px;
+    background-color: #d0d0d0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #0141AD;
+    transition: width 0.08s linear;
+}
+
+/* ==== 5 秒沒輸入的提示 ==== */
+.resume-hint {
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    width: 100px;
+    font-size: 14px;
+    background-color: #0141AD;
+    color: white;
+    border-radius: 50px;
+    display: none;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.resume-icon {
+    margin-right: 6px;
+}
+
+.resume-icon img {
+    height: 12px;
+    width: 12px;
+}
+
+/* ==== 結果視窗 ==== */
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 24px 32px;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 420px;
+    font-family: "Noto Sans TC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.modal-buttons button {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#btnRetry {
+    background-color: #eeeeee;
+}
+
+#btnNext {
+    background-color: #0141AD;
+    color: #ffffff;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #000;
+}

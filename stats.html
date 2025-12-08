@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stats__style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <div class="nav">
+            <div class="nav__logo"><a href="index.html">
+                    <img src="./LOGO2.png" alt="">
+            </div></a>
+
+            <nav class="nav__menu">
+                <ul>
+                    <li><a href="lesson--basic.html">課程</a></li>
+                    <li><a href="challenge.html">挑戰</a></li>
+                    <li><a href="stats.html">個人面板</a></li>
+                    <li><a href="aboutme.html">關於我們</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav__func">
+                <a class="nav__mode-btn">
+                    <img src="./icon/sun-yellow.png" alt="">
+                </a>
+                <a href="" class="nav__login-btn">登入</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="section-1">
+
+                <div class="s-a">
+                    <div class="speed">
+                        <div class="speed-progress">
+                            <div id="circle-wpm"></div>
+                            <div class="progress-text-overlay">
+                                <span class="main-number"></span>
+                                <span class="label">WPM</span>
+                            </div>
+                        </div>
+
+                        <div class="speed__right">
+                            <div class="speed__title">速度</div>
+                            <div class="speed__average">成員平均：65WPM</div>
+                        </div>
+                    </div>
+
+                    <div class="accu">
+                        <div class="accu-progress">
+                            <div id="circle-accu"></div>
+
+                            <div class="progress-text-overlay--2">
+                                <span class="main-number--2"></span>
+                                <span class="label--2">%</span>
+                            </div>
+                        </div>
+
+                        <div class="accu__right">
+                            <div class="accu__title">準確率</div>
+                            <div class="accu__average">成員平均：84%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-time">
+                    <div class="practice-time__title">練習時間</div>
+
+                    <div class="practice-time__label">
+                        <div class="practice-time__lesson">
+                            <div class="practice-time__dot"></div>
+                            <span>課程</span>
+                        </div>
+                        <div class="practice-time__challenge">
+                            <div class="practice-time__dot--2"></div>
+                            <span>挑戰</span>
+                        </div>
+                    </div>
+
+                    <div class="practice-time__pie">
+                        <div class="time-display__container">
+                            <div id="time-display">00:00:00</div>
+                        </div>
+                        <div id="pie_circle"></div>
+                    </div>
+
+                    <div class="btn-area">
+                        <div class="btn-blue"></div>
+                        <div class="btn btn1">今天</div>
+                        <div class="btn">本周</div>
+                        <div class="btn">本月</div>
+                    </div>
+                </div>
+
+                <div class="calendar-container">
+                    <div class="calendar__title">
+                        每日練習紀錄
+                    </div>
+
+                    <div class="calendar-grid" id="calendarGrid">
+                        <div class="day-label-col">
+                            <span class="day-label">一</span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label"></span>
+                            <span class="day-label">日</span>
+                        </div>
+                    </div>
+
+                    <div class="month-labels">
+                        <span class="month-label" id="monthLabelLeft"></span>
+                        <span class="month-label" id="monthLabelMiddle"></span>
+                        <span class="month-label" id="monthLabelRight"></span>
+                    </div>
+
+
+                    <div class="counter-display">
+                        <p>
+                            <span class="fire-icon">🔥</span>
+                            連續練習天數
+                            <span id="streakCount" class="streak-number">0</span>
+                            天
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-2">
+
+                <div class="section-2__header">
+                    <h2 class="section-2__title">鍵盤熟悉度</h2>
+                    <div class="section-2__btn-area">
+                        <div class="section-2__btn -on" id="section-2__btn1">速度</div>
+                        <div class="section-2__btn " id="section-2__btn2">準確率</div>
+                        <div class="section-2__btn-blue"></div>
+                    </div>
+                </div>
+
+                <div class="section-2__main">
+                    <p class="section-2__info">款彩色鍵盤顯示了每個字元的輸入速度和準確度。藍色越深，表示輸入速度越快。白色鍵尚未練習過。</p>
+                    <div class="keyboard-speed">
+                        <div class="row-1">
+                            <div class="key key-en">`</div>
+                            <div class="key">ㄅ</div>
+                            <div class="key">ㄉ</div>
+                            <div class="key">ˇ</div>
+                            <div class="key">ˋ</div>
+                            <div class="key">ㄓ</div>
+                            <div class="key">ˊ</div>
+                            <div class="key">˙</div>
+                            <div class="key">ㄚ</div>
+                            <div class="key">ㄞ</div>
+                            <div class="key">ㄢ</div>
+                            <div class="key">ㄦ</div>
+                            <div class="key key-en">=</div>
+                            <div class="key key-en">backspace</div>
+                        </div>
+                        <div class="row-2">
+                            <div class="key key-en">tab</div>
+                            <div class="key">ㄆ</div>
+                            <div class="key">ㄊ</div>
+                            <div class="key">ㄍ</div>
+                            <div class="key">ㄐ</div>
+                            <div class="key">ㄔ</div>
+                            <div class="key">ㄗ</div>
+                            <div class="key">ㄧ</div>
+                            <div class="key">ㄛ</div>
+                            <div class="key">ㄟ</div>
+                            <div class="key">ㄣ</div>
+                            <div class="key key-en">[</div>
+                            <div class="key key-en">]</div>
+                            <div class="key key-en">\</div>
+                        </div>
+                        <div class="row-3">
+                            <div class="key key-en">caps lock</div>
+                            <div class="key">ㄇ</div>
+                            <div class="key">ㄋ</div>
+                            <div class="key">ㄎ</div>
+                            <div class="key">ㄑ</div>
+                            <div class="key">ㄕ</div>
+                            <div class="key">ㄘ</div>
+                            <div class="key">ㄨ</div>
+                            <div class="key">ㄜ</div>
+                            <div class="key">ㄠ</div>
+                            <div class="key">ㄤ</div>
+                            <div class="key key-en">'</div>
+                            <div class="key key-en">enter</div>
+                        </div>
+                        <div class="row-4">
+                            <div class="key key-en">shift</div>
+                            <div class="key">ㄈ</div>
+                            <div class="key">ㄌ</div>
+                            <div class="key">ㄏ</div>
+                            <div class="key">ㄒ</div>
+                            <div class="key">ㄖ</div>
+                            <div class="key">ㄙ</div>
+                            <div class="key">ㄩ</div>
+                            <div class="key">ㄝ</div>
+                            <div class="key">ㄡ</div>
+                            <div class="key">ㄥ</div>
+                            <div class="key key-en">shift</div>
+                        </div>
+                        <div class="row-5">
+                            <div class="key key-en">ctrl</div>
+                            <div class="key key-en">start</div>
+                            <div class="key key-en">alt</div>
+                            <div class="key key-en2">space</div>
+                            <div class="key key-en">alt</div>
+                            <div class="key key-en">fn</div>
+                            <div class="key key-en">ctrl</div>
+                        </div>
+                    </div>
+
+                    <div class="keyboard-accu">
+                        <div class="row-1">
+                            <div class="key2  key-en">`</div>
+                            <div class="key2">ㄅ</div>
+                            <div class="key2">ㄉ</div>
+                            <div class="key2">ˇ</div>
+                            <div class="key2">ˋ</div>
+                            <div class="key2">ㄓ</div>
+                            <div class="key2">ˊ</div>
+                            <div class="key2">˙</div>
+                            <div class="key2">ㄚ</div>
+                            <div class="key2">ㄞ</div>
+                            <div class="key2">ㄢ</div>
+                            <div class="key2">ㄦ</div>
+                            <div class="key2 key-en">=</div>
+                            <div class="key2 key-en">backspace</div>
+                        </div>
+                        <div class="row-2">
+                            <div class="key2 key-en">tab</div>
+                            <div class="key2">ㄆ</div>
+                            <div class="key2">ㄊ</div>
+                            <div class="key2">ㄍ</div>
+                            <div class="key2">ㄐ</div>
+                            <div class="key2">ㄔ</div>
+                            <div class="key2">ㄗ</div>
+                            <div class="key2">ㄧ</div>
+                            <div class="key2">ㄛ</div>
+                            <div class="key2">ㄟ</div>
+                            <div class="key2">ㄣ</div>
+                            <div class="key2 key-en">[</div>
+                            <div class="key2 key-en">]</div>
+                            <div class="key2 key-en">\</div>
+                        </div>
+                        <div class="row-3">
+                            <div class="key2 key-en">caps lock</div>
+                            <div class="key2">ㄇ</div>
+                            <div class="key2">ㄋ</div>
+                            <div class="key2">ㄎ</div>
+                            <div class="key2">ㄑ</div>
+                            <div class="key2">ㄕ</div>
+                            <div class="key2">ㄘ</div>
+                            <div class="key2">ㄨ</div>
+                            <div class="key2">ㄜ</div>
+                            <div class="key2">ㄠ</div>
+                            <div class="key2">ㄤ</div>
+                            <div class="key2 key-en">'</div>
+                            <div class="key2 key-en">enter</div>
+                        </div>
+                        <div class="row-4">
+                            <div class="key2 key-en">shift</div>
+                            <div class="key2">ㄈ</div>
+                            <div class="key2">ㄌ</div>
+                            <div class="key2">ㄏ</div>
+                            <div class="key2">ㄒ</div>
+                            <div class="key2">ㄖ</div>
+                            <div class="key2">ㄙ</div>
+                            <div class="key2">ㄩ</div>
+                            <div class="key2">ㄝ</div>
+                            <div class="key2">ㄡ</div>
+                            <div class="key2">ㄥ</div>
+                            <div class="key2 key-en">shift</div>
+                        </div>
+                        <div class="row-5">
+                            <div class="key2 key-en">ctrl</div>
+                            <div class="key2 key-en">start</div>
+                            <div class="key2 key-en">alt</div>
+                            <div class="key2  key-en2">space</div>
+                            <div class="key2 key-en">alt</div>
+                            <div class="key2 key-en">fn</div>
+                            <div class="key2 key-en">ctrl</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-2__bottom">
+                    <div class="section-2__card">
+                        <span class="section-2__icon">
+                            <img src="./icon/idea.png" alt="">
+                        </span>
+                        <p class="section-2__card-info">
+                            查看速度時，藍色越深，表示您在該鍵上的打字速度越快。
+                        </p>
+                    </div>
+                    <div class="section-2__card">
+                        <span class="section-2__icon">
+                            <img src="./icon/idea.png" alt="">
+                        </span>
+                        <p class="section-2__card-info">
+                            查看準確率時，藍色表示準確率達到 100%，紅色表示準確率較低。
+                        </p>
+                    </div>
+                    <div class="section-2__card">
+                        <span class="section-2__icon">
+                            <img src="./icon/idea.png" alt="">
+                        </span>
+                        <p class="section-2__card-info">
+                            點擊按鍵可查看其他按鍵相對於該按鍵的速度。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-3">
+
+                <div class="section-3__header">
+                    <h2 class="section-3__title">
+                        手指熟悉度
+                    </h2>
+                    <div class="section-3__speed-color">
+                        <p class="section-3__slow-fast">
+                            快
+                            <span class="section-3__gradient"><img src="./stat_finger-speed_gradient/gradient.png"
+                                    alt=""></span>
+                            慢
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-3__main">
+
+                    <div class="section-3__left">
+                        <p class="section-3__info">
+                            此圖表顯示了每個手指的當前速度和 <br>
+                            實際準確度。
+                        </p>
+                        <div class="hand-data">
+                            <div class="hand-data__left">
+                                <div class="hand-data__tag">左手</div>
+                                <p class="hand-data__info">
+                                    <span>38</span> WPM<br>
+                                    <span>85%</span> 準確率
+                                </p>
+                            </div>
+                            <div class="hand-data__right">
+                                <div class="hand-data__tag">右手</div>
+                                <p class="hand-data__info">
+                                    <span>35</span> WPM<br>
+                                    <span>87%</span> 準確率
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-3__right">
+                        <div class="finger-data">
+
+                            <div class="finger-data__left">
+                                <div class="finger-data__pics">
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/01.png" alt="">
+                                    </div>
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/02.png" alt="">
+                                    </div>
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/03.png" alt="">
+                                    </div>
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/04.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="finger-data__infos">
+                                    <div class="finger-data__info">
+                                        23 pwm <br>
+                                        93% <br>
+                                        小指 <br>
+                                    </div>
+                                    <div class="finger-data__info">
+                                        31 pwm <br>
+                                        90% <br>
+                                        無名指 <br>
+                                    </div>
+                                    <div class="finger-data__info">
+                                        32 pwm <br>
+                                        85% <br>
+                                        中指 <br>
+                                    </div>
+                                    <div class="finger-data__info">
+                                        28 pwm <br>
+                                        91% <br>
+                                        食指 <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="finger-data__right">
+                                <div class="finger-data__pics">
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/05.png" alt="">
+                                    </div>
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/06.png" alt="">
+                                    </div>
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/07.png" alt="">
+                                    </div>
+                                    <div class="finger-data__pic">
+                                        <img src="./hand-pic/08.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="finger-data__infos">
+                                    <div class="finger-data__info">
+                                        31 pwm <br>
+                                        90% <br>
+                                        食指 <br>
+                                    </div>
+                                    <div class="finger-data__info">
+                                        32 pwm <br>
+                                        77% <br>
+                                        中指 <br>
+                                    </div>
+                                    <div class="finger-data__info">
+                                        50 pwm <br>
+                                        70% <br>
+                                        無名指 <br>
+                                    </div>
+                                    <div class="finger-data__info">
+                                        28 pwm <br>
+                                        80% <br>
+                                        小指 <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-3__card-area">
+                            <div class="section-3__card">
+                                <span class="section-2__icon">
+                                    <img src="./icon/idea.png" alt="">
+                                </span>
+                                <p class="section-2__card-info">
+                                    使用這張圖表來確定速度和準確性方面最強和最弱的手指。
+                                </p>
+                            </div>
+
+                            <div class="section-3__card">
+                                <span class="section-2__icon">
+                                    <img src="./icon/idea.png" alt="">
+                                </span>
+                                <p class="section-2__card-info">
+                                    真正的準確度是指不考慮任何修正的準確度。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-circle-progress@1.2.2/dist/circle-progress.min.js"></script>
+    <script src="stats__script.js"></script>
+
+</body>
+
+</html>
