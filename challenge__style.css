@@ -1,8 +1,9 @@
-        body{
-            margin: 0;  
-            font-family: 'Noto Sans TC', sans-serif;      
+        body {
+            margin: 0;
+            font-family: 'Noto Sans TC', sans-serif;
         }
-        .background{
+
+        .background {
             position: fixed;
             top: 0;
             left: 0;
@@ -10,17 +11,18 @@
             z-index: -1;
             opacity: 0.5;
         }
-        .background img{
+
+        .background img {
             width: 100%;
         }
 
-        .content-box{
+        .content-box {
             width: 1096px;
             margin: auto;
             padding-bottom: 200px;
-        } 
+        }
 
-        header{
+        header {
             position: fixed;
             top: 0;
             left: 0;
@@ -30,7 +32,8 @@
             justify-content: center;
             width: 100%;
         }
-        .nav{
+
+        .nav {
             margin: 30px auto auto auto;
             display: flex;
             align-items: center;
@@ -43,49 +46,59 @@
             backdrop-filter: blur(5px);
             box-shadow: 2px 2px 2px #c6c6c6;
         }
-        .nav__logo{
+
+        .nav__logo {
             width: 78px;
             height: 28px;
             margin: 0 10px 0 31px;
         }
-        .nav__logo img{
+
+        .nav__logo img {
             width: 100%;
         }
-        .nav__menu ul{
+
+        .nav__menu ul {
             display: flex;
             list-style: none;
             padding-left: 0;
             width: 450px;
             justify-content: space-between;
         }
-        .nav__menu li{
+
+        .nav__menu li {
             padding-left: 50px;
             font-size: 16px;
             font-weight: 500;
             letter-spacing: 2px;
         }
-        .nav__menu a{
+
+        .nav__menu a {
             text-decoration: none;
             color: black;
         }
-        .nav__menu a:hover{
+
+        .nav__menu a:hover {
             color: #0141AD;
         }
-        .nav__func{
+
+        .nav__func {
             display: flex;
             align-items: center;
             margin-left: auto;
             margin-right: 10px;
             /* border: solid 1px; */
         }
-        .nav__mode-btn{
+
+        .nav__mode-btn {
             height: 35px;
             width: 35px;
         }
-        .nav__mode-btn img{
+
+        .nav__mode-btn img {
             width: 100%;
         }
-        .nav__login-btn{
+
+        .nav__login-btn {
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -100,13 +113,14 @@
             color: white;
         }
 
-        .lesson-info{
+        .lesson-info {
             display: flex;
             width: 1096px;
             height: 40px;
             margin: 20px auto auto auto;
         }
-        .lesson-info__type{
+
+        .lesson-info__type {
             display: flex;
             align-items: center;
             background-color: #0141AD;
@@ -115,7 +129,8 @@
             border-radius: 100px;
             margin-right: 20px;
         }
-        .lesson-info__stat-area{
+
+        .lesson-info__stat-area {
             display: flex;
             align-items: center;
             width: 350px;
@@ -125,42 +140,48 @@
             border-radius: 100px;
         }
 
-        .background-box{
+        .background-box {
             width: 100%;
             height: 500px;
             background-color: aliceblue;
         }
-        .section{
+
+        .section {
             margin-top: 160px;
         }
-        .section-2 .lesson-card{
+
+        .section-2 .lesson-card {
             background-color: rgba(255, 255, 255, 0.5);
         }
 
-        .section__header{
+        .section__header {
             display: flex;
             align-items: flex-end;
             margin: 50px 0 20px 0;
         }
-        .section__title{
+
+        .section__title {
             line-height: 1;
             margin: 0;
             font-size: 32px;
             font-weight: 500;
         }
-        .section__eng{
+
+        .section__eng {
             line-height: 1;
             margin: 0;
             font-size: 24px;
             font-weight: 500;
             margin-left: 20px;
         }
-        .section__lesson-row{
+
+        .section__lesson-row {
             display: flex;
             height: 175px;
             margin-bottom: 20px;
         }
-        .lesson-card{
+
+        .lesson-card {
             width: 175px;
             height: 175px;
             background-color: rgb(255, 255, 255);
@@ -170,41 +191,49 @@
             box-shadow: -1px -1px 5px rgb(117, 117, 117);
             margin-right: 20px;
         }
-        .lesson-card a{
+
+        .lesson-card a {
             text-decoration: none;
             color: rgb(65, 65, 65);
         }
-        .lesson-card:hover img{
+
+        .lesson-card:hover img {
             transform: scale(1.1);
         }
-        .lesson-card__num{
+
+        .lesson-card__num {
             font-size: 32px;
             font-weight: 700;
             line-height: 1;
-            padding: 5px 0 0 10px; 
+            padding: 5px 0 0 10px;
         }
-        .lesson-card__icon{
+
+        .lesson-card__icon {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 107px;
-            border-bottom: solid 1px rgb(188, 188, 188);          
+            border-bottom: solid 1px rgb(188, 188, 188);
         }
-        .lesson-card__icon img{
+
+        .lesson-card__icon img {
             height: 90%;
             transition: transform 0.2s ease-in-out;
         }
-        .lesson-card__icon--2{
+
+        .lesson-card__icon--2 {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 107px;
-            border-bottom: solid 1px rgb(188, 188, 188);          
+            border-bottom: solid 1px rgb(188, 188, 188);
         }
-        .lesson-card__icon--2 img{
+
+        .lesson-card__icon--2 img {
             height: 80%;
         }
-        .lesson-card__name{
+
+        .lesson-card__name {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -212,4 +241,126 @@
             line-height: 1;
             font-size: 15px;
             font-weight: 500;
+        }
+
+        /* =============== Login Modal =============== */
+
+        .login-modal__overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            backdrop-filter: blur(8px);
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-modal {
+            width: 380px;
+            padding: 32px;
+            border-radius: 24px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(240, 240, 255, 0.7));
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            position: relative;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .login-modal__close {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            cursor: pointer;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+
+        .login-modal__close:hover {
+            opacity: 1;
+        }
+
+        .login-modal__title {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .login-modal__subtitle {
+            margin-top: 6px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .login-modal__input-area {
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .login-modal__label {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .login-modal__input {
+            width: 93%;
+            height: 42px;
+            padding: 0 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .login-modal__input:focus {
+            border-color: #0141AD;
+        }
+
+        .login-modal__btn {
+            width: 100%;
+            height: 48px;
+            margin-top: 20px;
+            background-color: #0141AD;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-modal__btn:hover {
+            background-color: #003f99;
+        }
+
+        .login-modal__hint {
+            margin-top: 12px;
+            font-size: 12px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.55);
+        }
+
+
+        /* =============== Dark Mode =============== */
+        body.dark-mode .login-modal {
+            background: linear-gradient(180deg, rgba(30, 41, 59, 0.85), rgba(2, 6, 23, 0.85));
+            border-color: rgba(148, 163, 184, 0.35);
+            color: #E2E8F0;
+        }
+
+        body.dark-mode .login-modal__input {
+            background-color: #0F172A;
+            color: #E2E8F0;
+            border-color: #334155;
+        }
+
+        body.dark-mode .login-modal__btn {
+            background-color: #0EA5E9;
+            color: white;
+        }
+
+        body.dark-mode .login-modal__subtitle {
+            color: #94A3B8;
         }
